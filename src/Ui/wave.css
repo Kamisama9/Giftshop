@@ -1,0 +1,48 @@
+.waveMiddle{
+    background-image: url('../Images/wave-mid.png');
+    background-size: 50% 120px;
+    animation: move-wave 10s linear infinite;
+}
+.waveBottom{
+    background-image: url('../Images/wave-bot.png');
+    background-size: 50% 100px;
+    animation: move-wave 15s linear infinite;
+
+}
+.waveTop
+{
+    background-image: url('../Images/wave-top.png');
+    background-size: 50% 100px;
+}
+.Wave-container
+{
+    position: absolute;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -10;
+
+}
+.wave
+{
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+    z-index: 20;
+}
+@keyframes move-wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55);
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1);
+    }
+}

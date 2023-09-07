@@ -1,0 +1,22 @@
+
+.icon-circle {
+  bottom: -10rem;
+  right: 0;
+  animation: dotsAnimation 5s linear infinite;
+}
+
+
+@keyframes dotsAnimation {
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .icon-circle {
+   display: none;
+  }
+}
+
+
